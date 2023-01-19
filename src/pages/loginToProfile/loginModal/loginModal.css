@@ -1,0 +1,98 @@
+.login-to-profile-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -999;
+    text-align: center;
+    transition: 0.3s ease all;
+    opacity: 0;
+}
+
+.modal-active{
+    display: flex;
+    opacity: 1;
+    z-index: 999;
+}
+
+.close-login-modal{
+    color: #bdbbbb;
+    position: absolute;
+    right: 33px;
+    top: 102px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.login-to-profile-modal > div{
+    position: relative;
+    top: -15px;
+}
+
+.login-to-profile-modal h4{
+    color: #afaeae;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.login-to-profile-modal h1{
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    padding: 10px 0 30px;
+    letter-spacing: -1px;
+}
+
+.error-title-modal{
+    color: #eab000!important;
+}
+
+.modal-otp-input{
+    direction: ltr /*!rtl:ignore*/;
+    margin: 0.5em;
+}
+
+.modal-otp-input input {
+    background: transparent;
+    border: 0.03em solid #fff;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 2.5em;
+    height: 1.6em;
+    margin: 0.12em;
+    padding: 0.4em;
+    text-align: center;
+    transition: transform .1s ease-out;
+    width: 1.6em;
+}
+
+.modal-otp-input input:focus{
+    transform: scale(1.1);
+    outline: none;
+}
+
+.modal-otp-input-error{
+    animation: shakeit .3s 1;
+    animation-delay: .3s;
+}
+
+@keyframes shakeit {
+    0% {
+        transform: translateX(-4em);
+    }
+    25% {
+        transform: translateX(4em);
+    }
+    50% {
+        transform: translateX(-4em);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

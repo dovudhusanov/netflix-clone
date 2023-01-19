@@ -1,0 +1,40 @@
+.filmsCategory{
+    width: 100%;
+    padding: 0 10px;
+}
+
+.filmsCategory > h3{
+    color: white;
+    padding: 20px 0 20px 53px;
+}
+
+.films {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.films::-webkit-scrollbar {
+    display: none;
+}
+
+.films::-webkit-scrollbar-track {
+    display: none;
+}
+
+.films::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+.films img {
+    width: 300px;
+    padding: 10px;
+}
+
+.ytPlayer iframe{
+    width: 100%;
+    min-height: 600px;
+    padding: 10px;
+}

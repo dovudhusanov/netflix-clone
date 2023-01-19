@@ -1,0 +1,84 @@
+.login-to-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-to-profile > div{
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.3s ease all;
+}
+
+.login-to-profile-active > div {
+    opacity: 0;
+    transform: scale(1.5);
+}
+
+.login-to-profile > div{
+    margin-top: -100px;
+}
+
+.login-to-profile-title{
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    top: 17px;
+}
+
+.login-profile-cards{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-profile-card {
+    width: 140px;
+    max-width: 140px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    margin: 13px;
+}
+
+.login-profile-card img{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+}
+
+.login-profile-card::before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 95%;
+    height: 134px;
+    border: 3px solid transparent;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.login-profile-card:hover:before{
+    border: 3px solid white;
+}
+
+.login-profile-card:hover span{
+    color: white;
+}
+
+.login-profile-card span{
+    color: grey;
+    display: block;
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.lock-profile-icon{
+    color: grey;
+    position: relative;
+    top: 15px;
+}
