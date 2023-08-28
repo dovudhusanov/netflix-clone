@@ -4,7 +4,7 @@ import Main from "./main.jsx";
 
 function LoginProfile({user}) {
 
-    const [login, setLogin] = useState(false)
+    const [login, setLogin] = useState(true)
 
     return (
         <>
