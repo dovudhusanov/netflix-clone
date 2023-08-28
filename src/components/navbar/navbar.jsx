@@ -21,7 +21,7 @@ function Navbar({user, setLogin}) {
                        Log out
                    </a>
                    <a className="authButton" onClick={() => setLogin(false)}>change account</a>
-                   <img src={user.photoURL} alt="auth user" className="userImage"/>
+                   <img src={user?.photoURL} alt="auth user" className="userImage"/>
                </div>
            </div>
         </div>
