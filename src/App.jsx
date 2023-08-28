@@ -16,7 +16,7 @@ function App() {
 
     return (
         <>
-            {user ? <LoginProfile user={user}/> : <LogIn />}
+            {!user ? <LoginProfile user={user}/> : <LogIn />}
         </>
     )
 }
