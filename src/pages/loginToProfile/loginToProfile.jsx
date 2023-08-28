@@ -13,8 +13,8 @@ function LoginToProfile({user, setLogin, login}) {
                     <h1 className="login-to-profile-title">Who's watching?</h1>
                     <div className="login-profile-cards">
                         <div className="login-profile-card" onClick={() => setModal(true)}>
-                            <img src={user.photoURL} alt={user.displayName}/>
-                            <span>{user.displayName.slice(0, 8)}</span>
+                            <img src={user?.photoURL} alt={user?.displayName}/>
+                            <span>{user?.displayName?.slice(0, 8)}</span>
                             <i className="fa-regular fa-lock-keyhole lock-profile-icon"></i>
                         </div>
                         <div className="login-profile-card" onClick={() => setLogin(true)}>
